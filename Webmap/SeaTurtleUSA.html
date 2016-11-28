@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<link rel="shortcut icon" href="?\favicon.ico">
+<title>SeaTurtleUSA</title>
+		<link rel="stylesheet"type="text/css"href="Turtle.css" />
+		<link rel="stylesheet" href="https://js.arcgis.com/3.18/esri/css/esri.css">
+		    <style>
+		      html, body, #map {
+		        height: 100%;
+		        margin: 0;
+       			padding: 0;
+		      }
+		    </style>
+		<script src="https://js.arcgis.com/3.18/"></script>
+		    <script>
+		      var map;
+		
+		      require(["esri/map", "dojo/domReady!"], function(Map) {
+		        map = new Map("map", {
+		          basemap: "topo",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
+		          center: [-100.1, 39.1], // longitude, latitude
+		          zoom: 4
+		        });
+		      });
+		    </script>
+				
+	</head>
+	<div id = "wrapper">
+	<body>
+		
+		<div id="Body"> <!-- This is the core of my program -->
+			
+			<div id="header">	<!--This is the beginning of my header section-->
+				<h1> SeaTurtleUSA:
+					<br> An Educational Guide for Sea Turtles in the United States</br> </h1>
+			</div>	<!--This is the end of my header section-->
+			
+			<div id="Menu"> <!--This is the beginning of my menu/selection section-->
+				<ul class="ulhead">
+					<li id="lihead"> 
+						<a href="SeaTurtleUSA.html"> Home</a> </li>
+					<li id="lihead"> 
+						<a href="https://support.worldwildlife.org/site/Donation2?df_id=12632&12632.donation=form1&s_src=AWE1705OQ18299A01146CX&_ga=1.18659198.699196688.1480319578"> How You Can Help</a> </li> <!--Update LINK!-->
+					<li id="lihead"> 
+						<a href="http://www.geo.txstate.edu/"> About The Authors</a> </li> <!--Update LINK!-->
+				</ul>	<!--This is the end of my menu/selection section-->
+			</div>
+			
+			<div id="Sidebar">	<!--This is the beginning of Left Sidebar section-->
+				<h2> Species Information </h2>
+				<select class="SelectorMenu">
+					<option value="Blank"> Select a Species: </option>
+					<option value="Green Sea Turtle">Green Sea Turtle</option>
+					<option value="Hawksbill Sea Turtle">Hawksbill Sea Turtle</option>
+					<option value="Kemp's Ridley Sea Turtle">Kemp's Ridley Sea Turtle</option>
+					<option value="Leatherback Sea Turtle">Leatherback Sea Turtle</option>
+					<option value="Loggerhead Sea Turtle">Loggerhead Sea Turtle</option>
+					<option value="Olive Ridley Sea Turtle">Olive Ridley Sea Turtle</option>
+				</select>
+			</div>	<!--This is the end of my Left Sidebar section-->
+			
+			<div id="Mainbody">		<!--This is the beginning of my MAIN section-->
+				<div id="map"></div>	
+			</div>	<!--This is the end of my MAIN section-->
+			
+			<div id="footer">	<!--This is the beginning of my Footer section-->
+				<div id="footMenu">
+					<ul class="ulhead">
+						<li id="lihead"> 
+							<a href="index.html"> Home</a> </li>
+						<li id="lihead"> 
+							<a href="http://www.txstate.edu/"> Texas State University</a> </li>
+						<li id="lihead"> 
+							<a href="http://www.geo.txstate.edu/"> Department of Geography</a> </li>
+					</ul>
+				</div>
+				
+				<p>
+					<ul class="foot">
+						<li id="lifoot" style="color:#D8C7EA;">Copyright 2016</li>
+						<li id="lifoot" style="color:#D8C7EA;"> All rights reserved</li>
+					</ul>
+				</p>
+				
+			</div>	<!--This is the end of my Footer section-->
+			
+			
+
+		</div>
+		
+	</body>
+	</div>
+</html>
